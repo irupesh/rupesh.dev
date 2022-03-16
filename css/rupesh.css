@@ -1,0 +1,132 @@
+/***************************
+
+Rupesh
+
+***************************/
+
+/*Vertical Sliding*/
+.slidingVertical{
+	display: inline;
+	text-indent: 8px;
+}
+.slidingVertical span{
+	animation: topToBottom 12.5s linear infinite 0s;
+	-ms-animation: topToBottom 12.5s linear infinite 0s;
+	-webkit-animation: topToBottom 12.5s linear infinite 0s;
+  font-weight: bold;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.slidingVertical span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-20px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(20px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-20px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(20px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-20px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(20px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+
+
+.certificate-item {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.certificate-item:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-box-shadow: 0 12px 17px rgba(0, 0, 0, .12);
+    -moz-box-shadow: 0 12px 17px rgba(0, 0, 0, .12);
+    -o-box-shadow: 0 12px 17px rgba(0, 0, 0, .12);
+    box-shadow: 0 12px 17px rgba(0, 0, 0, .12)
+}
+
+.certi-logo {
+    display: table-cell;
+    width: 120px;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 25px;
+    vertical-align: middle;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px
+}
+
+.certi-logo img {
+    display: block;
+    max-width: 100%
+}
+
+.certi-content {
+    display: table-cell;
+    width: 100%;
+    padding: 20px 25px;
+    vertical-align: middle
+}
+
+.certi-title h4 {
+    font-size: 16px;
+    margin: 0 0 5px
+}
+
+.certi-id {
+    font-size: .9em;
+}
+
+.certi-date {
+    font-size: .7em;
+    opacity: .7
+}
